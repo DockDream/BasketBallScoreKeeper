@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Basket Ball Score Keeper</string>
+    <string name="oreb_label"> <u>Off Reb</u> </string>
+    <string name="dreb_label"> <u>Def Reb</u> </string>
+    <string name="blocks_label"> <u>Blocks</u> </string>
+    <string name="steals_label"> <u>Steals</u> </string>
+    <string name="assist_label"> <u>Assists</u> </string>
+    <string name="turnover_label"> <u>T.Overs</u> </string>
+    <string name="fg_percentage"> <u>FG %</u> </string>
+    <string name="three_percentage"> <u>3PT %</u> </string>
+    <string name="ft_percentage"> <u>FT %</u> </string>
+    <string name="fouls_label"> <u>Fouls</u> </string>
+
+    <string-array name="button_names">
+        <item>fgmade</item>
+        <item>threeptmade</item>
+        <item>ftmade</item>
+        <item>fgattempt</item>
+        <item>threeattempt</item>
+        <item>ftattempt</item>
+        <item>oreb</item>
+        <item>dreb</item>
+        <item>block</item>
+        <item>steal</item>
+        <item>assist</item>
+        <item>turnover</item>
+        <item>foul</item>
+        <item>minuspoint</item>
+    </string-array>
+
+</resources>
