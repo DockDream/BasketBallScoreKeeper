@@ -2,11 +2,11 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '23.0.3'
 
     defaultConfig {
         applicationId "com.dockdream.basketballscorekeeper"
-        minSdkVersion 17
+        minSdkVersion 19
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"

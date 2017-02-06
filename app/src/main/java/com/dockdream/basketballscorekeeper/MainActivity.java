@@ -1,19 +1,15 @@
 package com.dockdream.basketballscorekeeper;
 
 import android.graphics.PorterDuff;
-import android.support.annotation.ColorRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,13 +36,20 @@ public class MainActivity extends AppCompatActivity {
     Button steal, assist, turnover;
     Button foul, minusstat, enter;
 
+    /*
+    * The variables TIME_INTERVAL and mBackPressed along with
+    *the onBackPressed method were written by StackOverflow user
+    *Saro Taşciyan
+    */
+    private static final int TIME_INTERVAL = 4000; // # milliseconds, desired time passed between two back presses.
+    private long mBackPressed;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         score = (TextView) findViewById(R.id.score);
 
@@ -117,6 +120,38 @@ public class MainActivity extends AppCompatActivity {
         score.setText(scoreString);
 
     }// end onCreate
+
+    // Method to save activity state on exit
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        //outState.putInt("someVarA", someVarA);
+        //outState.putString("someVarB", someVarB);
+    } // end onSaveInstanceState
+
+    // Method to restore activity state on reentry
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        //someVarA = savedInstanceState.getInt("someVarA");
+        //someVarB = savedInstanceState.getString("someVarB");
+    } // end onRestoreInstanceState
+
+    /*
+     * onBackPressed method written by StackOverflow user Saro Taşciyan
+     */
+    @Override
+    public void onBackPressed()
+    {
+        if (mBackPressed + TIME_INTERVAL > System.currentTimeMillis())
+        {
+            super.onBackPressed();
+            return;
+        }
+        else { Toast.makeText(getBaseContext(), "Tapping the back button again \nwill exit app and reset all stats!", Toast.LENGTH_LONG).show(); }
+
+        mBackPressed = System.currentTimeMillis();
+    }
 
 
     public void buttonPushed (View v){

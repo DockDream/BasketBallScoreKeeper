@@ -18,168 +18,168 @@
         android:id="@+id/gridLayout">
 
         <Button
-            android:text="FG"
+            android:text="@string/fg"
             android:id="@+id/fgmade"
             android:layout_row="0"
             android:layout_column="0"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="FGA"
+            android:text="@string/fga"
             android:id="@+id/fgattempt"
             android:layout_row="1"
             android:layout_column="0"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="3PT"
+            android:text="@string/_3pt"
             android:id="@+id/threeptmade"
             android:layout_row="0"
             android:layout_column="1"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="FT"
+            android:text="@string/ft"
             android:id="@+id/ftmade"
             android:layout_row="0"
             android:layout_column="2"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="OREB"
+            android:text="@string/oreb"
             android:id="@+id/oreb"
             android:layout_row="2"
             android:layout_column="0"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="3PTA"
+            android:text="@string/_3pta"
             android:id="@+id/threeattempt"
             android:layout_row="1"
             android:layout_column="1"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="FTA"
+            android:text="@string/fta"
             android:id="@+id/ftattempt"
             android:layout_row="1"
             android:layout_column="2"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="STL"
+            android:text="@string/stl"
             android:id="@+id/steal"
             android:layout_row="3"
             android:layout_column="0"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="DREB"
+            android:text="@string/dreb"
             android:id="@+id/dreb"
             android:layout_row="2"
             android:layout_column="1"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="BLK"
+            android:text="@string/blk"
             android:id="@+id/block"
             android:layout_row="2"
             android:layout_column="2"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="Foul"
+            android:text="@string/foul"
             android:id="@+id/foul"
             android:layout_row="4"
             android:layout_column="0"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="AST"
+            android:text="@string/ast"
             android:id="@+id/assist"
             android:layout_row="3"
             android:layout_column="1"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="TRNOV"
+            android:text="@string/trnov"
             android:id="@+id/turnover"
             android:layout_row="3"
             android:layout_column="2"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="- stat"
+            android:text="@string/stat"
             android:id="@+id/minusstat"
             android:layout_row="4"
             android:layout_column="1"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="buttonPushed" />
 
         <Button
-            android:text="Enter"
+            android:text="@string/enter"
             android:id="@+id/enter"
             android:layout_row="4"
             android:layout_column="2"
             android:clickable="true"
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:onClick="enterStats" />
     </GridLayout>
 
@@ -189,16 +189,16 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/score"
         android:layout_above="@+id/gridLayout"
-        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/gridLayout"
         android:layout_alignEnd="@+id/gridLayout"
         android:textColor="#f10a0a"
         android:background="#000000"
         android:gravity="center"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:elegantTextHeight="false"
         android:singleLine="false"
-        android:text="0 - 0" />
+        android:text="0 - 0"
+        android:layout_alignTop="@+id/hblabel" />
 
     <Button
         android:layout_width="wrap_content"
@@ -228,9 +228,9 @@
         android:layout_height="wrap_content"
         android:text="@string/oreb_label"
         android:id="@+id/horlabel"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="15dp"
+        android:layout_alignTop="@+id/hdrlabel"
+        android:layout_toStartOf="@+id/hdrlabel"
+        android:layout_marginRight="10dp"
         android:textColor="#000000" />
 
     <TextView
@@ -248,9 +248,9 @@
         android:layout_height="wrap_content"
         android:text="@string/dreb_label"
         android:id="@+id/hdrlabel"
-        android:layout_alignBottom="@+id/horlabel"
-        android:layout_toEndOf="@+id/horlabel"
-        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/hblabel"
+        android:layout_toStartOf="@+id/hblabel"
+        android:layout_marginRight="10dp"
         android:textColor="#000000" />
 
     <TextView
@@ -268,10 +268,10 @@
         android:layout_height="wrap_content"
         android:text="@string/blocks_label"
         android:id="@+id/hblabel"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
         android:textColor="#000000"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/hdrlabel" />
+        android:layout_above="@+id/hb"
+        android:layout_toStartOf="@+id/score" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -279,9 +279,10 @@
         android:text="0"
         android:textAlignment="center"
         android:id="@+id/hb"
-        android:layout_alignTop="@+id/hdr"
-        android:layout_alignStart="@+id/hblabel"
-        android:layout_alignEnd="@+id/hblabel" />
+        android:layout_above="@+id/htlabel"
+        android:layout_marginBottom="10dp"
+        android:layout_alignEnd="@+id/hblabel"
+        android:layout_alignStart="@+id/hblabel" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -289,10 +290,9 @@
         android:text="@string/steals_label"
         android:id="@+id/hslabel"
         android:textColor="#000000"
-        android:layout_below="@+id/hor"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_alignParentStart="true" />
+        android:layout_alignTop="@+id/halabel"
+        android:layout_marginRight="10dp"
+        android:layout_alignStart="@+id/hor" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -302,7 +302,8 @@
         android:id="@+id/hs"
         android:layout_below="@+id/hslabel"
         android:layout_alignStart="@+id/hslabel"
-        android:layout_toStartOf="@+id/hdrlabel" />
+        android:layout_toStartOf="@+id/hdrlabel"
+        android:layout_alignEnd="@+id/hor" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -310,7 +311,7 @@
         android:text="@string/assist_label"
         android:id="@+id/halabel"
         android:textColor="#000000"
-        android:layout_alignTop="@+id/hslabel"
+        android:layout_alignTop="@+id/htlabel"
         android:layout_alignStart="@+id/hdr" />
 
     <TextView
@@ -321,7 +322,8 @@
         android:id="@+id/ha"
         android:layout_below="@+id/halabel"
         android:layout_alignStart="@+id/halabel"
-        android:layout_toStartOf="@+id/hblabel" />
+        android:layout_toStartOf="@+id/hblabel"
+        android:layout_alignEnd="@+id/hdr" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -329,7 +331,7 @@
         android:text="@string/turnover_label"
         android:id="@+id/htlabel"
         android:textColor="#000000"
-        android:layout_alignTop="@+id/halabel"
+        android:layout_above="@+id/ht"
         android:layout_alignStart="@+id/hb" />
 
     <TextView
@@ -338,9 +340,10 @@
         android:text="0"
         android:textAlignment="center"
         android:id="@+id/ht"
-        android:layout_below="@+id/htlabel"
+        android:layout_above="@+id/home"
+        android:layout_marginBottom="15dp"
         android:layout_alignStart="@+id/htlabel"
-        android:layout_alignEnd="@+id/hb" />
+        android:layout_alignEnd="@+id/hblabel" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -348,7 +351,7 @@
         android:text="@string/oreb_label"
         android:id="@+id/vorlabel"
         android:textColor="#000000"
-        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/hblabel"
         android:layout_marginLeft="15dp"
         android:layout_toEndOf="@+id/score" />
 
@@ -369,7 +372,7 @@
         android:id="@+id/vdrlabel"
         android:layout_marginLeft="10dp"
         android:textColor="#000000"
-        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/vorlabel"
         android:layout_toEndOf="@+id/vor" />
 
     <TextView
@@ -389,7 +392,7 @@
         android:id="@+id/vblabel"
         android:layout_marginLeft="10dp"
         android:textColor="#000000"
-        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/vdrlabel"
         android:layout_toEndOf="@+id/vdrlabel" />
 
     <TextView
@@ -465,11 +468,12 @@
         android:layout_height="wrap_content"
         android:text="@string/fg_percentage"
         android:id="@+id/hfgpercentlabel"
-        android:layout_marginLeft="20dp"
         android:textColor="#000000"
         android:layout_below="@+id/home"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/hs"
+        android:layout_toStartOf="@+id/hthreepercentlabel" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -478,8 +482,9 @@
         android:textAlignment="center"
         android:id="@+id/hfgma"
         android:layout_below="@+id/hfgpercentlabel"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/hdrlabel" />
+        android:layout_alignStart="@+id/hfgpercentlabel"
+        android:layout_marginRight="7dp"
+        android:layout_alignEnd="@+id/hslabel" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -488,6 +493,7 @@
         android:id="@+id/hthreepercentlabel"
         android:textColor="#000000"
         android:layout_alignTop="@+id/hfgpercentlabel"
+        android:layout_alignEnd="@+id/ha"
         android:layout_alignStart="@+id/ha" />
 
     <TextView
@@ -497,8 +503,8 @@
         android:textAlignment="center"
         android:id="@+id/hfgp"
         android:layout_below="@+id/hfgma"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/hfgma" />
+        android:layout_alignEnd="@+id/hfgma"
+        android:layout_alignStart="@+id/hfgma" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -508,7 +514,7 @@
         android:id="@+id/hthreema"
         android:layout_below="@+id/hthreepercentlabel"
         android:layout_alignStart="@+id/hthreepercentlabel"
-        android:layout_alignEnd="@+id/hthreepercentlabel" />
+        android:layout_alignEnd="@+id/halabel" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -527,6 +533,7 @@
         android:id="@+id/hftpercentlabel"
         android:textColor="#000000"
         android:layout_alignTop="@+id/hthreepercentlabel"
+        android:layout_alignEnd="@+id/ht"
         android:layout_alignStart="@+id/ht" />
 
     <TextView
@@ -536,7 +543,8 @@
         android:textAlignment="center"
         android:id="@+id/hftma"
         android:layout_below="@+id/hftpercentlabel"
-        android:layout_alignStart="@+id/hftpercentlabel" />
+        android:layout_alignStart="@+id/hftpercentlabel"
+        android:layout_alignEnd="@+id/hftpercentlabel" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -674,5 +682,15 @@
         android:layout_below="@+id/vfoulslabel"
         android:layout_alignStart="@+id/vfoulslabel"
         android:layout_alignEnd="@+id/vfoulslabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Background designed by Freepik"
+        android:textAlignment="center"
+        android:id="@+id/credit"
+        android:layout_above="@+id/score"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
