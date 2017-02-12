@@ -690,7 +690,7 @@
         android:textAlignment="center"
         android:id="@+id/credit"
         android:layout_above="@+id/score"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
